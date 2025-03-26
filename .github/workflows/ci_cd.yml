@@ -63,7 +63,7 @@ jobs:
           run: |
             docker build -t ${{ SECRETS.DOCKERHUB_USERNAME }}/backend_flask:latest .
 
-      # Step 8: Log in to Docker Hub
+      # Step 8: Log in to Docker Hu
         - name: Log in to Docker Hub
           run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
 
