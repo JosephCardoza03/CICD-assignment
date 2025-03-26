@@ -35,6 +35,10 @@ jobs:
           flake8 .
       # Step 4: Run Python tests
       ####
+      - name: Run Python tests
+        working-directory: ./backend_flask
+        run: |
+          pytest
 
   deploy:
     name: Deploy & Push to Docker Hub
